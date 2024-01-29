@@ -1,0 +1,11 @@
+comand: docker build -t jwst/node .
+
+image_name = jwst/node
+docker_file_location = .
+
+=========================
+
+command: docker run -p 3000:3000 -d jwst/node
+
+image_name = jwst/node
+port = -p 3000:3000
